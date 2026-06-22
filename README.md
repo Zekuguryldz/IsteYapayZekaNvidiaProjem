@@ -43,6 +43,21 @@ Klasik **Iris** veri seti (150 örnek, 4 özellik, 3 tür: *setosa*, *versicolor
 
 - **Train/Test ayrımı:** `test_size=0.2`, `random_state=42` → 120 eğitim / 30 test örneği
 
+### Veri Seti
+
+Çalışmada kullanılan ham veri dosyaları [`data/iris/`](./data/iris/) klasöründe yer almaktadır (kaynak: UCI Machine Learning Repository — Fisher's Iris):
+
+| Dosya | Açıklama |
+|-------|----------|
+| `iris.data` | Orijinal Iris veri seti — 150 örnek (her sınıftan 50), 4 sayısal öznitelik + sınıf |
+| `bezdekIris.data` | Düzeltilmiş versiyon — `iris.names`'te belirtilen 2 hatalı örnek (35. ve 38.) düzeltilmiştir. **Notebook'taki keşifsel analiz (EDA) bu dosyayla yapılır.** |
+| `iris.names` | Veri seti dokümantasyonu (öznitelikler, sınıf dağılımı, istatistikler) |
+| `Index` | Dosya dizini |
+
+**Öznitelikler:** sepal length, sepal width, petal length, petal width (cm) · **Sınıflar:** *Iris-setosa*, *Iris-versicolor*, *Iris-virginica* · **Eksik değer:** yok. Bir sınıf (*setosa*) diğer ikisinden doğrusal olarak ayrılabilirken, *versicolor* ve *virginica* birbirinden tam ayrılamaz.
+
+> **Not:** Modelleme aşamasında (train/test ayrımı ve sınıflandırma) veri, `sklearn.datasets.load_iris()` ile yüklenir. scikit-learn de bu düzeltilmiş veri setini sağladığından sonuçlar yerel dosyalarla birebir tutarlıdır.
+
 ### Sonuçlar
 
 | Model | Test Doğruluğu (Accuracy) |
@@ -59,6 +74,8 @@ Dört modelin de test setinde %100 doğruluk üretmesi dikkat çekicidir. Iris, 
 ## 2. Breast Cancer Veri Seti Sınıflandırması
 
 **Breast Cancer** veri seti (569 örnek, 30 özellik; sınıflar: *malignant/kötü huylu* = 212, *benign/iyi huylu* = 357) üzerinde ikili sınıflandırma yapılmıştır. Sınıf dağılımı, kutu grafikleri ve korelasyon haritası ile keşifsel analiz gerçekleştirilmiştir.
+
+> **Not:** Bu veri seti repoda dosya olarak tutulmaz; notebook içinde doğrudan scikit-learn kütüphanesinden `load_breast_cancer()` ile yüklenir. Dolayısıyla yerel bir veri dosyasına ihtiyaç yoktur.
 
 - **Train/Test ayrımı:** `test_size=0.2`, `random_state=42` → 455 eğitim / 114 test örneği
 - **Modeller:** Lojistik Regresyon · Karar Ağacı · Random Forest
