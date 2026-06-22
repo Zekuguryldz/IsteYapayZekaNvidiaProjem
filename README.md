@@ -8,6 +8,8 @@ Bu repo, **NVIDIA ile Yapay Zekaya Giriş Online Staj Deneyimi Modülü** (İş'
 **Hazırlayan:** Zeki Uğur Yıldız
 **İletişim:** zek.uguryildiz@gmail.com
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GRjK2K_AOkeh1XfKTAz9nMSK3TXZoQ05?usp=sharing)
+
 ---
 
 ## İçerik
@@ -97,6 +99,7 @@ Meme kanseri probleminde yalnızca **accuracy** yeterli değildir. Kötü huylu 
 
 | Dosya | Açıklama |
 |-------|----------|
+| [Google Colab'da Aç](https://colab.research.google.com/drive/1GRjK2K_AOkeh1XfKTAz9nMSK3TXZoQ05?usp=sharing) | Projeyi doğrudan Colab'da çalıştırılabilir hali |
 | [`NVIDIA_Zeki_Ugur_Yildiz.ipynb`](./NVIDIA_Zeki_Ugur_Yildiz.ipynb) | Projenin tüm kodunu içeren Google Colab notebook'u |
 | [`Nvidia_Final_Proje_Sunum_Sablonu.pptx`](./Nvidia_Final_Proje_Sunum_Sablonu.pptx) | Proje sunumu |
 | [`Iris_Siniflandirma_Raporu.docx`](./Iris_Siniflandirma_Raporu.docx) | Iris sınıflandırma raporu |
