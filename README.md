@@ -77,7 +77,7 @@ Metrikler, kötü huylu sınıfın (kritik sınıf) tespiti üzerinden hesaplanm
 
 ### Overfitting (Aşırı Öğrenme) Analizi
 
-E�itim ve test doğrulukları karşılaştırıldığında:
+Eğitim ve test doğrulukları karşılaştırıldığında:
 
 - **Lojistik Regresyon:** Eğitim 0.9582 / Test 0.9561 — aradaki fark yalnızca **0.0021**. Aşırı öğrenmeden uzak, genellenebilirliği yüksek bir model.
 - **Karar Ağacı:** Eğitim setinde ~%100 doğruluğa ulaşırken testte en sert düşüşü yaşar — klasik **overfitting** davranışı.
